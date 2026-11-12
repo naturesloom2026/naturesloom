@@ -7,7 +7,7 @@
   /* ================= CONFIG: edit these ================= */
   const CONFIG = {
     // Google Sheets > File > Share > Publish to web > CSV > Publish, then paste the link here
-    CSV_URL: https://docs.google.com/spreadsheets/d/e/2PACX-1vSLSlsXPfA_0yaGUVzusbikI7EDs7qPC3na2pa6PMbtrQUoTTY-ZiA2tAaJkd4CvI1pVYJdQa81f2vP/pub?gid=0&single=true&output=csv,
+    CSV_URL: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSLSlsXPfA_0yaGUVzusbikI7EDs7qPC3na2pa6PMbtrQUoTTY-ZiA2tAaJkd4CvI1pVYJdQa81f2vP/pub?gid=0&single=true&output=csv",
     WHATSAPP_NUMBER: '918088498045', // country code + number, no + or spaces
     STORE_NAME: 'naturesloom',
     IMAGE_DIR: './images/',
