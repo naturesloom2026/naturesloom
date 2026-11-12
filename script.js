@@ -9,7 +9,7 @@
   const CONFIG = {
     storeName: 'Natures Loom',
     // Google Sheets > File > Share > Publish to web > CSV > Publish, then paste the link here
-    csvUrl: 'PASTE_YOUR_GOOGLE_SHEET_CSV_URL_HERE',
+    csvUrl: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSLSlsXPfA_0yaGUVzusbikI7EDs7qPC3na2pa6PMbtrQUoTTY-ZiA2tAaJkd4CvI1pVYJdQa81f2vP/pub?gid=0&single=true&output=csv",
     whatsapp: '918088498045',   // country code + number, or a full wa.me link
     instagram: '',              // username or link; leave empty to hide the icon
     imageDir: './images/',
