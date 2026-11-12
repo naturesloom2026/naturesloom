@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>naturesloom | Explore Experience Embrace</title>
+  <meta name="description" content="naturesloom: handpicked clothing. Browse the collection and order on WhatsApp.">
+  <meta name="theme-color" content="#4F6144">
+  <link rel="icon" href="./images/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#catalog">Skip to products</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./" aria-label="naturesloom home">
+        <img class="brand-logo" src="./images/logo.png" alt="" width="56" height="56">
+        <span class="brand-text">
+          <span class="brand-name">naturesloom</span>
+          <span class="brand-tag">Explore Experience Embrace</span>
+        </span>
+      </a>
+    </div>
+    <div class="thread" aria-hidden="true"></div>
+  </header>
+
+  <main class="wrap">
+    <section class="toolbar" aria-label="Find products">
+      <div class="search">
+        <label for="search" class="sr-only">Search products</label>
+        <input id="search" type="search" placeholder="Search by name, category or description" autocomplete="off">
+      </div>
+      <div id="filters" class="filters" role="group" aria-label="Filter by category"></div>
+    </section>
+
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+    <section id="catalog" class="grid" aria-busy="true" aria-label="Products"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="thread" aria-hidden="true"></div>
+    <div class="wrap footer-inner">
+      <p class="footer-brand">naturesloom</p>
+      <p>Orders and questions are handled on WhatsApp.
+        <a id="footer-wa" href="https://wa.me/918088498045" target="_blank" rel="noopener">Chat with us</a>
+      </p>
+      <p class="footer-small">&copy; <span id="year"></span> naturesloom</p>
+    </div>
+  </footer>
+
+  <dialog id="modal" class="modal" aria-labelledby="m-title">
+    <div class="modal-inner">
+      <button type="button" class="modal-close" id="m-close" aria-label="Close details">&times;</button>
+      <div class="modal-media">
+        <img id="m-img" alt="">
+      </div>
+      <div class="modal-body">
+        <p id="m-cat" class="modal-cat"></p>
+        <h2 id="m-title" class="modal-title"></h2>
+        <p class="modal-price-row">
+          <span id="m-price" class="modal-price"></span>
+          <span id="m-stock" class="badge" hidden>Out of stock</span>
+        </p>
+        <p id="m-desc" class="modal-desc"></p>
+
+        <fieldset id="m-sizes" class="sizes" hidden>
+          <legend>Choose a size</legend>
+          <div id="m-size-list" class="size-list"></div>
+        </fieldset>
+
+        <a id="m-order" class="btn-order" href="#" target="_blank" rel="noopener">Order on WhatsApp</a>
+        <p id="m-hint" class="modal-hint" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
